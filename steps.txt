@@ -1,0 +1,7 @@
+1 - composer require laravel/breeze --dev
+2 - php breeze:install
+3 - composer require laravel/cashier - composer.json = "laravel/cashier":"^13.5"
+4 - site do stripe e aba densevolvedor copiar a Api public e api  key colocar no env
+5 - php artisan make:middleware EnsureUserIsSubscribed depois temos de registrar no nosso arquivo
+Kernel
+5.1 -  'subscribed' =>  \App\Http\Middleware\EnsureUserIsSubscribed::class,
